@@ -11,16 +11,16 @@ import { baseUrl } from "./sitemap";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "清水一平 | Ippei Shimizu",
+    default: "清水一平 | Webエンジニア",
     template: "%s | Portfolio",
   },
   description: "清水一平のポートフォリオサイトです。",
   openGraph: {
-    title: "My Portfolio",
-    description: "This is my portfolio.",
+    title: "清水一平 | Webエンジニア",
+    description: "清水一平のポートフォリオサイトです。",
     url: baseUrl,
-    siteName: "My Portfolio",
-    locale: "en_US",
+    siteName: "清水一平 | Portfolio",
+    locale: "ja_JP",
     type: "website",
   },
   robots: {
