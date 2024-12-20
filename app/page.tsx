@@ -7,8 +7,8 @@ import Link from "next/link";
 
 export default function Page() {
   return (
-    <section className="pt-10">
-      <div className="grid grid-cols-[auto_1fr] gap-x-4 items-center mb-8">
+    <section className="md:pt-10">
+      <div className="grid gap-y-2 mb-3 md:grid-cols-[auto_1fr] md:gap-x-4 md:items-center md:mb-8">
         <Image
           src="/profile.jpg"
           alt=""
@@ -16,24 +16,26 @@ export default function Page() {
           height={80}
           className="rounded-full"
         />
-        <h1 className="text-2xl font-semibold tracking-tighter">
+        <h1 className="text-xl md:text-2xl font-semibold tracking-tighter">
           清水 一平｜Ippei Shimizu
         </h1>
       </div>
       {/* About */}
       <div>
-        <p>1996年生まれ / 山梨県出身</p>
-        <p>
+        <p className="text-sm md:text-base">1996年生まれ / 山梨県出身</p>
+        <p className="text-sm md:text-base">
           RUNTEQでWebエンジニア兼講師をしています｜社会人硬式野球→ コーダー→
           Webエンジニア｜普段はフロントエンド・バックエンド問わずに開発を担当しています。
         </p>
-        <p>React / Next.js / TypeScript / Ruby / Ruby on Rails</p>
+        <p className="text-sm md:text-base">
+          React / Next.js / TypeScript / Ruby / Ruby on Rails
+        </p>
       </div>
-      <div className="my-8 grid gap-y-6">
+      <div className="my-5 md:my-8 grid gap-y-6">
         {/* 個人開発 */}
         <div>
           <h3 className="font-bold text-[18px] mb-2">🧑‍💻 個人開発</h3>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
             <Link
               href="https://buzzbase.jp/"
               target="_blank"
@@ -62,7 +64,7 @@ export default function Page() {
           <div className="grid gap-y-6">
             <div>
               <h4 className="font-bold text-base mb-1">◼︎ Zenn</h4>
-              <div className="grid grid-cols-3 gap-x-2 gap-y-2">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-x-2 gap-y-2">
                 {zenn.map((item) => (
                   <ArticleItem item={item} key={item.position} />
                 ))}
@@ -71,7 +73,7 @@ export default function Page() {
 
             <div>
               <h4 className="font-bold text-base mb-1">◼︎ Qiita</h4>
-              <div className="grid grid-cols-3 gap-x-2 gap-y-2">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-x-2 gap-y-2">
                 {qiita.map((item) => (
                   <ArticleItem item={item} key={item.position} />
                 ))}
@@ -80,7 +82,7 @@ export default function Page() {
 
             <div>
               <h4 className="font-bold text-base mb-1">◼︎ 個人ブログ</h4>
-              <div className="grid grid-cols-3 gap-x-2 gap-y-2">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-x-2 gap-y-2">
                 {onesite.map((item) => (
                   <ArticleItem item={item} key={item.position} />
                 ))}
