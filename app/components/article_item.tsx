@@ -1,7 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ArticleItem({ item }) {
+type ArticleItemProps = {
+  item: {
+    position: number;
+    title: string;
+    thumbnail: string;
+    url: string;
+    publishedAt: string;
+  };
+};
+
+export default function ArticleItem({ item }: ArticleItemProps) {
   return (
     <Link
       key={item.position}

@@ -64,7 +64,7 @@ export default function Page() {
               <h4 className="font-bold text-base mb-1">◼︎ Zenn</h4>
               <div className="grid grid-cols-3 gap-x-2 gap-y-2">
                 {zenn.map((item) => (
-                  <ArticleItem item={item} />
+                  <ArticleItem item={item} key={item.position} />
                 ))}
               </div>
             </div>
@@ -73,7 +73,7 @@ export default function Page() {
               <h4 className="font-bold text-base mb-1">◼︎ Qiita</h4>
               <div className="grid grid-cols-3 gap-x-2 gap-y-2">
                 {qiita.map((item) => (
-                  <ArticleItem item={item} />
+                  <ArticleItem item={item} key={item.position} />
                 ))}
               </div>
             </div>
@@ -82,7 +82,7 @@ export default function Page() {
               <h4 className="font-bold text-base mb-1">◼︎ 個人ブログ</h4>
               <div className="grid grid-cols-3 gap-x-2 gap-y-2">
                 {onesite.map((item) => (
-                  <ArticleItem item={item} />
+                  <ArticleItem item={item} key={item.position} />
                 ))}
               </div>
             </div>
