@@ -11,10 +11,10 @@ import { baseUrl } from "./sitemap";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Next.js Portfolio Starter",
-    template: "%s | Next.js Portfolio Starter",
+    default: "清水一平 | Ippei Shimizu",
+    template: "%s | Portfolio",
   },
-  description: "This is my portfolio.",
+  description: "清水一平のポートフォリオサイトです。",
   openGraph: {
     title: "My Portfolio",
     description: "This is my portfolio.",
@@ -45,7 +45,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="en"
+      lang="ja"
       className={cx(
         "text-[#fffffff5] bg-[#191919]",
         GeistSans.variable,
