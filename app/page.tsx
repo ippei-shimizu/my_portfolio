@@ -36,25 +36,38 @@ export default function Page() {
         <div>
           <h3 className="font-bold text-[18px] mb-2">🧑‍💻 個人開発</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-            <Link
-              href="https://buzzbase.jp/"
-              target="_blank"
-              className="block mt-1 border border-gray-600 rounded overflow-hidden"
-            >
-              <Image
-                src="https://buzzbase.jp/opengraph-image.png?55ff9c44125f3530"
-                alt=""
-                width={1200}
-                height={630}
-                className="w-full h-auto"
-              />
+            <div className="block mt-1 border border-gray-600 rounded overflow-hidden">
+              <Link href="https://buzzbase.jp/" target="_blank" className="">
+                <Image
+                  src="https://buzzbase.jp/opengraph-image.png?55ff9c44125f3530"
+                  alt=""
+                  width={1200}
+                  height={630}
+                  className="w-full h-auto"
+                />
+              </Link>
               <div className="p-2">
-                <h4 className="font-bold text-base my-1">BUZZ BASE</h4>
+                <Link href="https://buzzbase.jp/" target="_blank">
+                  <h4 className="font-bold text-base my-1">BUZZ BASE</h4>
+                </Link>
                 <p className="text-sm">
                   野球の個人成績を記録して、チーム内外の友達とランキング形式で成績を共有することができるアプリです。
                 </p>
+                <div className="grid gap-y-0.5 mt-1">
+                  <Link href="https://buzzbase.jp/" target="_blank">
+                    <p className="text-xs text-blue-500">
+                      https://buzzbase.jp/
+                    </p>
+                  </Link>
+                  <Link
+                    href="https://github.com/ippei-shimizu/buzzbase"
+                    target="_blank"
+                  >
+                    <p className="text-xs text-blue-500">GitHub</p>
+                  </Link>
+                </div>
               </div>
-            </Link>
+            </div>
           </div>
         </div>
         {/* 記事 */}
