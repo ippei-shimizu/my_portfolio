@@ -25,6 +25,15 @@ export const zenn = [
   },
   {
     position: 4,
+    title:
+      "個人開発でデザインに悩むエンジニアへ。工数を抑えていい感じのUIを作る方法【Meraki UI】",
+    url: "https://zenn.dev/ippe/articles/1495eab44bde18",
+    publishedAt: "2024.12.23",
+    thumbnail:
+      "https://res.cloudinary.com/zenn/image/upload/s--UIXcXSLc--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E5%2580%258B%25E4%25BA%25BA%25E9%2596%258B%25E7%2599%25BA%25E3%2581%25A7%25E3%2583%2587%25E3%2582%25B6%25E3%2582%25A4%25E3%2583%25B3%25E3%2581%25AB%25E6%2582%25A9%25E3%2582%2580%25E3%2582%25A8%25E3%2583%25B3%25E3%2582%25B8%25E3%2583%258B%25E3%2582%25A2%25E3%2581%25B8%25E3%2580%2582%25E5%25B7%25A5%25E6%2595%25B0%25E3%2582%2592%25E6%258A%2591%25E3%2581%2588%25E3%2581%25A6%25E3%2581%2584%25E3%2581%2584%25E6%2584%259F%25E3%2581%2598%25E3%2581%25AEUI%25E3%2582%2592%25E4%25BD%259C%25E3%2582%258B%25E6%2596%25B9%25E6%25B3%2595%25E3%2580%2590Meraki%2520UI%25E3%2580%2591%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2584%25E3%2581%25A3%25E3%2581%25BA%25E3%2581%2584%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzc0ODUyMDJjY2UuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
+  },
+  {
+    position: 5,
     title: "Reactで金融機関検索APIをたたいてみた",
     url: "https://zenn.dev/ippe/articles/3e3a86d32b271a",
     publishedAt: "2023.11.16",
@@ -32,7 +41,7 @@ export const zenn = [
       "https://res.cloudinary.com/zenn/image/upload/s--9gV3kxsY--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:React%25E3%2581%25A7%25E9%2587%2591%25E8%259E%258D%25E6%25A9%259F%25E9%2596%25A2%25E6%25A4%259C%25E7%25B4%25A2API%25E3%2582%2592%25E3%2581%259F%25E3%2581%259F%25E3%2581%2584%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2584%25E3%2581%25A3%25E3%2581%25BA%25E3%2581%2584%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzc0ODUyMDJjY2UuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
   },
   {
-    position: 5,
+    position: 6,
     title: "【Rails】N+1問題をicludesで解決することについてまとめてみた",
     url: "https://zenn.dev/ippe/articles/0352c3eab647c5",
     publishedAt: "2023.07.01",
@@ -40,7 +49,7 @@ export const zenn = [
       "https://res.cloudinary.com/zenn/image/upload/s--FPpbw27p--/c_fit%2Cg_north_west%2Cl_text:notosansjp-medium.otf_55:%25E3%2580%2590Rails%25E3%2580%2591N%252B1%25E5%2595%258F%25E9%25A1%258C%25E3%2582%2592icludes%25E3%2581%25A7%25E8%25A7%25A3%25E6%25B1%25BA%25E3%2581%2599%25E3%2582%258B%25E3%2581%2593%25E3%2581%25A8%25E3%2581%25AB%25E3%2581%25A4%25E3%2581%2584%25E3%2581%25A6%25E3%2581%25BE%25E3%2581%25A8%25E3%2582%2581%25E3%2581%25A6%25E3%2581%25BF%25E3%2581%259F%2Cw_1010%2Cx_90%2Cy_100/g_south_west%2Cl_text:notosansjp-medium.otf_37:%25E3%2581%2584%25E3%2581%25A3%25E3%2581%25BA%25E3%2581%2584%2Cx_203%2Cy_121/g_south_west%2Ch_90%2Cl_fetch:aHR0cHM6Ly9zdG9yYWdlLmdvb2dsZWFwaXMuY29tL3plbm4tdXNlci11cGxvYWQvYXZhdGFyLzc0ODUyMDJjY2UuanBlZw==%2Cr_max%2Cw_90%2Cx_87%2Cy_95/v1627283836/default/og-base-w1200-v2.png",
   },
   {
-    position: 6,
+    position: 7,
     title:
       "【WordPress】Cookieを使用し、特定のページを表示したユーザーのみ広告を表示させる",
     url: "https://zenn.dev/ippe/articles/82270eedcef854",
