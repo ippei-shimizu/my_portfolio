@@ -1,3 +1,4 @@
+import { note } from "app/article/note";
 import { onesite } from "app/article/onesite";
 import { qiita } from "app/article/qiita";
 import { zenn } from "app/article/zenn";
@@ -88,6 +89,15 @@ export default function Page() {
               <h4 className="font-bold text-base mb-1">◼︎ Qiita</h4>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-x-2 gap-y-2">
                 {qiita.map((item) => (
+                  <ArticleItem item={item} key={item.position} />
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h4 className="font-bold text-base mb-1">◼︎ note</h4>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-x-2 gap-y-2">
+                {note.map((item) => (
                   <ArticleItem item={item} key={item.position} />
                 ))}
               </div>
