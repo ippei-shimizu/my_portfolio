@@ -120,7 +120,7 @@ export default function Page() {
           <div className="grid gap-y-4">
             <div>
               <h4 className="font-bold text-base mb-1">
-                ◼︎ 株式会社スタートアップテクノロジー RUNTEQ事業部
+                ◼︎ 株式会社RUNTEQ
               </h4>
               <div className="flex gap-x-2">
                 <p className="text-sm">2024.05 〜</p>
