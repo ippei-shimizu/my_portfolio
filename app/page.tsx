@@ -72,7 +72,7 @@ export default function Page() {
             <div className="block mt-1 border border-gray-600 rounded overflow-hidden">
               <Link href="https://www.onesite-web.com/" target="_blank" className="">
                 <Image
-                  src="https://onesite-rouge.vercel.app/onesite-ogp.jpg"
+                  src="/onesite-ogp.jpg"
                   alt=""
                   width={1200}
                   height={630}
