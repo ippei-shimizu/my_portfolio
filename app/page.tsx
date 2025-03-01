@@ -69,6 +69,38 @@ export default function Page() {
                 </div>
               </div>
             </div>
+            <div className="block mt-1 border border-gray-600 rounded overflow-hidden">
+              <Link href="https://www.onesite-web.com/" target="_blank" className="">
+                <Image
+                  src="https://onesite-rouge.vercel.app/onesite-ogp.jpg"
+                  alt=""
+                  width={1200}
+                  height={630}
+                  className="w-full h-auto"
+                />
+              </Link>
+              <div className="p-2">
+                <Link href="https://www.onesite-web.com/" target="_blank">
+                  <h4 className="font-bold text-base my-1">Onesite</h4>
+                </Link>
+                <p className="text-sm">
+                  Web制作についての技術的な情報を発信している個人ブログです。
+                </p>
+                <div className="grid gap-y-0.5 mt-1">
+                  <Link href="https://www.onesite-web.com/" target="_blank">
+                    <p className="text-xs text-blue-500">
+                      https://www.onesite-web.com/
+                    </p>
+                  </Link>
+                  <Link
+                    href="https://github.com/ippei-shimizu/onesite"
+                    target="_blank"
+                  >
+                    <p className="text-xs text-blue-500">GitHub</p>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         {/* 記事 */}
