@@ -7,6 +7,7 @@ const nextConfig = {
       "qiita-user-contents.imgix.net",
       "images.microcms-assets.io",
       "buzzbase.jp",
+      "files.speakerdeck.com",
     ],
   },
   async redirects() {

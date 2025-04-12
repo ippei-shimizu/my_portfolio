@@ -3,6 +3,7 @@ import { onesite } from "app/article/onesite";
 import { qiita } from "app/article/qiita";
 import { zenn } from "app/article/zenn";
 import ArticleItem from "app/components/article_item";
+import { speakerDecks } from "app/speaking/speaker-deck";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -139,6 +140,21 @@ export default function Page() {
               <h4 className="font-bold text-base mb-1">◼︎ 個人ブログ</h4>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-x-2 gap-y-2">
                 {onesite.map((item) => (
+                  <ArticleItem item={item} key={item.position} />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* 登壇 */}
+        <div>
+          <h3 className="font-bold text-[18px] mb-2">🗣️ 登壇</h3>
+
+          <div className="grid gap-y-6">
+            <div>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-x-2 gap-y-2">
+                {speakerDecks.map((item) => (
                   <ArticleItem item={item} key={item.position} />
                 ))}
               </div>
