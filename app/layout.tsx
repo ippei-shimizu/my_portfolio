@@ -7,6 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./components/footer";
 import { baseUrl } from "./sitemap";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -52,6 +53,22 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
+      <Script
+      async src="https://www.googletagmanager.com/gtag/js?id=G-SVJD7NVLX8"
+      />
+      <Script
+        id="gtag-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SVJD7NVLX8');
+           `,
+        }}
+      />
       <body className="antialiased max-w-2xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           {children}
