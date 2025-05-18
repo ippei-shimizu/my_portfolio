@@ -27,7 +27,7 @@ export default function ArticleItem({ item }: ArticleItemProps) {
         className="rounded w-full h-auto"
       />
       <div className="p-2">
-        <p className="text-sm font-bold">{item.title}</p>
+        <p className="text-sm font-bold break-all">{item.title}</p>
         <span className="text-xs text-gray-300">{item.publishedAt}</span>
       </div>
     </Link>
