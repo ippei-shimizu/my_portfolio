@@ -1,5 +1,6 @@
 import { note } from "app/article/note";
 import { onesite } from "app/article/onesite";
+import { productionAchievements } from "app/article/production_achievements";
 import { qiita } from "app/article/qiita";
 import { zenn } from "app/article/zenn";
 import ArticleItem from "app/components/article_item";
@@ -24,13 +25,10 @@ export default function Page() {
       </div>
       {/* About */}
       <div>
-        <p className="text-sm md:text-base">1996年生まれ / 山梨県出身</p>
+        <p className="text-sm md:text-base">1996年生まれ / 神奈川県在住</p>
         <p className="text-sm md:text-base">
-          RUNTEQでWebエンジニア兼講師をしています｜社会人硬式野球→ コーダー→
-          Webエンジニア｜普段はフロントエンド・バックエンド問わずに開発を担当しています。
-        </p>
-        <p className="text-sm md:text-base">
-          React / Next.js / TypeScript / Ruby / Ruby on Rails
+          大学卒業後、社会人硬式野球に取り組んだのちに、2021年からコーダーとしてWeb制作のキャリアをスタートしました。<br />
+          その後、エンジニアにキャリアチェンジし、現在は株式会社RUNTEQでエンジニア兼講師として働いています。
         </p>
       </div>
       <div className="my-5 md:my-8 grid gap-y-6">
@@ -71,7 +69,11 @@ export default function Page() {
               </div>
             </div>
             <div className="block mt-1 border border-gray-600 rounded overflow-hidden">
-              <Link href="https://www.onesite-web.com/" target="_blank" className="">
+              <Link
+                href="https://www.onesite-web.com/"
+                target="_blank"
+                className=""
+              >
                 <Image
                   src="/onesite-ogp.jpg"
                   alt=""
@@ -162,14 +164,66 @@ export default function Page() {
           </div>
         </div>
 
+        {/* 制作実績 */}
+        <div>
+          <h3 className="font-bold text-[18px] mb-2">🏆 制作実績</h3>
+          <p className="text-sm mb-4">
+            これまでご対応させていただいたWeb制作案件の一部になります。
+          </p>
+          <div className="grid gap-y-6">
+            <div>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-x-2 gap-y-2">
+                {productionAchievements.map((item) => (
+                  <ArticleItem item={item} key={item.position} />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* スキル */}
+        <div>
+          <h3 className="font-bold text-[18px] mb-2">🛠️ スキル</h3>
+          <div className="grid gap-y-4">
+            <div>
+              <h4 className="font-bold text-base mb-1">◼︎ フロントエンド</h4>
+              <p className="text-sm">
+                JavaScript / TypeScript / React / Next.js / jQuery / HTML / CSS
+                / Scss
+              </p>
+            </div>
+
+            <div>
+              <h4 className="font-bold text-base mb-1">◼︎ バックエンド</h4>
+              <p className="text-sm">Ruby / Ruby on Rails</p>
+            </div>
+
+            <div>
+              <h4 className="font-bold text-base mb-1">◼︎ データベース</h4>
+              <p className="text-sm">MySQL / PostgreSQL</p>
+            </div>
+
+            <div>
+              <h4 className="font-bold text-base mb-1">◼︎ CMS</h4>
+              <p className="text-sm">WordPress / microCMS</p>
+            </div>
+
+            <div>
+              <h4 className="font-bold text-base mb-1">◼︎ ツール・その他</h4>
+              <p className="text-sm">
+                Git / GitHub / Docker / Figma / Adobe XD / Adobe Illustrator /
+                Adobe Photoshop
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* キャリア */}
         <div>
           <h3 className="font-bold text-[18px] mb-2">🍀 キャリア</h3>
           <div className="grid gap-y-4">
             <div>
-              <h4 className="font-bold text-base mb-1">
-                ◼︎ 株式会社RUNTEQ
-              </h4>
+              <h4 className="font-bold text-base mb-1">◼︎ 株式会社RUNTEQ</h4>
               <div className="flex gap-x-2">
                 <p className="text-sm">2024.05 〜</p>
                 <p className="text-sm font-bold">Webエンジニア兼講師</p>
@@ -178,7 +232,11 @@ export default function Page() {
                 使用技術 : Ruby / Ruby on Rails / React / Next.js / TypeScript
               </p>
               <ul className="mt-1 text-sm list-disc list-inside grid gap-y-1">
+                <li>
+                  Ruby on Railsを使用したWebアプリケーションの開発業務を担当。
+                </li>
                 <li>新規プロダクト、新規機能開発を担当。</li>
+                <li>講師業務</li>
               </ul>
             </div>
 
@@ -238,6 +296,22 @@ export default function Page() {
               </ul>
             </div>
           </div>
+        </div>
+
+        {/* お問い合わせ */}
+        <div>
+          <h3 className="font-bold text-[18px] mb-2">📩 お問い合わせ</h3>
+          <p className="text-sm">
+            お仕事のご依頼やご相談などがございましたら、以下のメールアドレスまでご連絡ください。
+          </p>
+          <p className="text-sm mt-1">
+            <a
+              href="mailto:ippei.shimizu.32@gmail.com"
+              className="text-blue-500"
+            >
+              ippei.shimizu.32@gmail.com
+            </a>
+          </p>
         </div>
       </div>
     </section>

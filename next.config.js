@@ -8,6 +8,12 @@ const nextConfig = {
       "images.microcms-assets.io",
       "buzzbase.jp",
       "files.speakerdeck.com",
+      "giftsakuma.com",
+      "nagataki.xyz",
+      "stampmura.com",
+      "toku5.style",
+      "hairroom-hacci.jp",
+      "parabolainc.jp",
     ],
   },
   async redirects() {
